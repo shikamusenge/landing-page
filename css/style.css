@@ -1,0 +1,144 @@
+:root {
+  --primaryColor: #1f2937;
+}
+#header-section,
+#footer-section {
+  background-color: var(--primaryColor);
+}
+#footer-section {
+  color: #f9faf8;
+  text-align: center;
+}
+#navbar-brand {
+  font-size: 24px;
+  color: #f9faf8;
+}
+#navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 5vw;
+}
+#navbar-links ul li a {
+  text-decoration: none;
+}
+#navbar-links ul li a,
+#hello #secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+#hello #main-text {
+  color: #f9faf8;
+  font-size: 48px;
+  font-family: extra-bold;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #nav-links-menu {
+  display: none;
+}
+nav #nav-links-menu .menu {
+  color: #e5e7eb;
+  padding-inline: 0.8rem;
+  padding-block: 4px;
+  cursor: pointer;
+}
+section {
+  padding-inline: 10vw;
+  padding-block: 1rem;
+}
+#hello {
+  display: flex;
+}
+#hello #image-container {
+  display: flex;
+  position: relative;
+  min-width: 50vw;
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #434e5e; */
+}
+#hello #image-container img {
+  max-width: 90%;
+  min-width: 90%;
+  min-height: 90%;
+  max-height: 90%;
+  background-color: #434e5e;
+}
+.signup-btn button {
+  outline: none;
+  border: none;
+  background-color: #3882f6;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  color: #e5e7eb;
+  padding-inline: 1rem;
+}
+
+#info-header {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+#info-body {
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+.upp-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #3882f6 1px;
+  min-width: 15vw;
+  min-height: 80px;
+}
+#quote {
+  background-color: #e5e7eb;
+  font-style: italic;
+  color: #1f2937;
+  font-weight: lighter;
+}
+#quote #editor {
+  text-align: right;
+  font-weight: 900;
+}
+#call-section #main-content {
+  display: flex;
+  background-color: #3882f6;
+  align-items: center;
+  padding-inline: 1rem;
+  color: #e5e7eb;
+  border-radius: 1rem;
+  justify-content: space-between;
+  margin-inline: 5vw;
+}
+#sgn-btn {
+  border-radius: 5px;
+  color: #e5e7eb;
+  float: right;
+  background-color: #3882f6;
+  border-color: #f9faf8;
+}
+@media screen and (max-width: 700px) {
+  #hello,
+  #info-body,
+  #call-section #main-content {
+    flex-direction: column;
+  }
+  #info-body .info-container {
+    width: 80vw;
+    height: fit-content;
+  }
+  #navbar-links {
+    display: none;
+  }
+  nav #nav-links-menu {
+    display: block;
+  }
+}
