@@ -121,12 +121,16 @@ section {
   font-style: italic;
   color: #1f2937;
   font-weight: lighter;
+  margin: 0;
 }
 #quote #editor {
   text-align: right;
   font-weight: 900;
 }
 #call-section #main-content {
+  padding: 0;
+  left: 0;
+  min-width: 100%;
   display: flex;
   background-color: #3882f6;
   align-items: center;
@@ -134,7 +138,6 @@ section {
   color: #e5e7eb;
   border-radius: 1rem;
   justify-content: space-between;
-  margin-inline: 5vw;
 }
 #sgn-btn {
   border-radius: 5px;
