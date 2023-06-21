@@ -1,6 +1,9 @@
 :root {
   --primaryColor: #1f2937;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 #header-section,
 #footer-section {
   background-color: var(--primaryColor);
@@ -29,7 +32,8 @@
 #hello #main-text {
   color: #f9faf8;
   font-size: 48px;
-  font-family: extra-bold;
+  font-weight: bold;
+  font-style: extra;
 }
 nav {
   display: flex;
@@ -55,7 +59,7 @@ section {
 #hello #image-container {
   display: flex;
   position: relative;
-  min-width: 50vw;
+  min-width: 40vw;
   min-height: 200px;
   align-items: center;
   justify-content: center;
@@ -90,13 +94,27 @@ section {
   gap: 2rem;
   justify-content: center;
 }
+#info-body footer {
+  min-height: 4rem;
+  max-height: 4rem;
+  font-size: small;
+  overflow: hidden;
+}
 .upp-div {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid #3882f6 1px;
+  border: solid #3882f6 3px;
   min-width: 15vw;
   min-height: 80px;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.upp-div img {
+  max-width: eval(height);
+  min-width: 100%;
+  max-height: 100px;
+  min-height: 100%;
 }
 #quote {
   background-color: #e5e7eb;
@@ -134,6 +152,10 @@ section {
   #info-body .info-container {
     width: 80vw;
     height: fit-content;
+  }
+  #info-body .info-container .upp-div {
+    display: flex;
+    align-items: center;
   }
   #navbar-links {
     display: none;
