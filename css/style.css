@@ -36,6 +36,9 @@ body {
   font-style: extra;
 }
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +48,7 @@ nav #nav-links-menu {
 }
 nav #nav-links-menu .menu {
   color: #e5e7eb;
-  padding-inline: 0.8rem;
+  padding-inline: 0.2rem;
   padding-block: 4px;
   cursor: pointer;
 }
@@ -166,4 +169,35 @@ section {
   nav #nav-links-menu {
     display: block;
   }
+  /* Menu */
+  .sem-black {
+    z-index: 3;
+    position: absolute;
+    background-color: #1f293796;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #showMenu {
+    background-color: #1f2937;
+    width: fit-content;
+    flex-direction: column;
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+    height: 100vh;
+  }
+  #showMenu li a:hover {
+    border-radius: 5px;
+    background-color: #434e5e;
+  }
+  #showMenu #close-btn {
+    color: #e5e7eb;
+    cursor: pointer;
+    display: block;
+  }
+}
+#close-btn {
+  display: none;
 }
