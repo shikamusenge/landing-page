@@ -42,6 +42,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #1f2937;
 }
 nav #nav-links-menu {
   display: none;
@@ -52,7 +53,8 @@ nav #nav-links-menu .menu {
   padding-block: 4px;
   cursor: pointer;
 }
-section {
+section,
+nav {
   padding-inline: 10vw;
   padding-block: 1rem;
 }
