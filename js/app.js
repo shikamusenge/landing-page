@@ -4,7 +4,6 @@ const linksDiv = document.querySelector("#navbar-links");
 const semBlack = document.querySelector("#sem-black");
 const ul = document.querySelector("#links-container");
 const links = ul.querySelectorAll("a");
-console.log(links);
 menuBtn.onclick = () => {
   linksDiv.style.display = "block";
   semBlack.className = "sem-black";

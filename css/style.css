@@ -183,7 +183,7 @@ nav {
   }
   #showMenu {
     background-color: #1f2937;
-    width: fit-content;
+    width: 50vw;
     flex-direction: column;
     float: right;
     margin-right: 0;
